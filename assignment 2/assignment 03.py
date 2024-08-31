@@ -15,15 +15,15 @@ if __name__  == '__main__':
             masahat = masahat_mostatil(arz, tol)
             mohit = mohit_mostatil(arz, tol)
         
-            print(f"masahat_mostatil:"(masahat_mostatil))
-            print(f"mohit_mostatil:"(mohit_mostatil)) 
+            print(f"masahat_mostatil:{masahat}")
+            print(f"mohit_mostatil:{mohit}") 
 
             break
 
         except ValueError :
             print ("lotfan adad vared konid")
             continue
-        
+
         except Exception as e:
             print(f"\nAn error has occured:\n{e}")
             continue
