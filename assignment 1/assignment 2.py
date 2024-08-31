@@ -6,9 +6,9 @@ while True :
     try:
         user_number = int(user_number)
     except ValueError:
-   
-   
         print("lotfan adad vared konid")
+    except Exception:
+        print("thier is an ERORR")
     if user_number < number :
         print ('bozorg tareh')
     elif user_number > number :

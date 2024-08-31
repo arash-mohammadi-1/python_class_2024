@@ -7,3 +7,5 @@ try :
         print ("you cant vote")
 except ValueError:
     print("lotfan adad vared konid")
+except Exception :
+    print('thier is an ERORR')
