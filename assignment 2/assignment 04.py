@@ -49,8 +49,6 @@ while True:
         add_kala(kala, mablagh)
         print("successful!")
         continue
-    
-        
 
     if barnameh == "2": 
         sum = total_mablagh()
