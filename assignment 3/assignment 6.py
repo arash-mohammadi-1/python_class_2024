@@ -1,6 +1,6 @@
 number = int(input('enter a number:'))
  
-def khayam_pasgal (number):
+def khayyam_pascal (number):
     if number :
-        result = 
+        result = ...
         print (result)
