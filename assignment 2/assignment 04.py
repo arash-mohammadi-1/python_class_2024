@@ -19,22 +19,24 @@ def total_mablagh () :
     return total
 
 
-def total_sum () :
-    sum = float(total_mablagh())
-    
+def set_budget():
     while True:
         budget = input("cheghadr pol dary ?🧐 ")
-        if budget.isdigit() is False :
-            print ("try again (only numbers)")
-            continue
-        break
-    budget = float(budget)
+        try:
+            budget = float(budget)
+            return budget
+        except ValueError:
+            print("try again (only numbers)")
+
+
+def total_sum () :
+    sum = float(total_mablagh())
     leftovers = budget - sum
     return leftovers
 
 
 while True:
-    print (f"1. add new kharj\n2. show sum of kharj\n3. show sum of budget\n4. exit program")
+    print (f"1. add new kharj\n2. show sum of kharj\n3. set budget\n4. show sum of budget\n5. exit program")
     barnameh =  input("enter you chosen platform: ")
 
     
@@ -56,14 +58,18 @@ while True:
         continue
 
     if barnameh == "3":
+        budget = set_budget()
+        print(f"your badget is now{budget}")
+
+    if barnameh == "4":
     
         summ = total_sum()
         print (f'your total budget is {summ}')
         continue
  
-    if barnameh == "4":
+    if barnameh == "5":
        print ("gameover😢")
        break
     else :
-        print ("try again. choose from 1,2,3,4")
+        print ("try again. choose from 1,2,3,4,5")
     
