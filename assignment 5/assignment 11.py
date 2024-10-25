@@ -12,6 +12,9 @@ with open('assignment 5\map_book.txt', 'r', encoding= "utf-8") as file:
 
     print(contents)
 
+with open("assignment 5\\report.txt", "w",encoding= "utf-8") as report:
+    report.write(" ")
+    
 with open("assignment 5\\report.txt", "a",encoding= "utf-8") as report:
     report.write("\n"f"The count of the lines that this book has: {splited_lines}""\n")
     report.write(f"The count of the word you gave me: {counted_file}""\n")
@@ -23,5 +26,3 @@ with open("assignment 5\\report.txt", "r",encoding= "utf-8") as report:
     print(report)
 
 
-with open("assignment 5\\report.txt", "w",encoding= "utf-8") as report:
-    report.write(" ")
