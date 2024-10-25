@@ -1,40 +1,31 @@
 import json
 
-sector_input = input("what sector do you work for?")
-
-try :
-        fullTimeEmployees_input = input("who many fullTimeEmployees do the company have?")
-except ValueError :
-     print("pleaes enter only numbers")
-
-longBusinessSummary_input = input("tell us about your longBusinessSummary:")
-
-city_input = input("where is the cpompany from(only put in the city that company is on):")
-
-try:
-    phone_number = input("what is thew company phone number(enter your number with ___ like : 0999_456_9999)?")
-except ValueError :
-     print("pleaes enter only numbers")
-     
 with open("assignment 6\info_company.json","r",encoding="utf8") as file :
     data = json.load(file)
     if "sector" in data :
-        data["sector"] = sector_input
+        sector = data["sector"] 
 
     if "fullTimeEmployees" in data :
-        data["fullTimeEmployees"] = fullTimeEmployees_input
+        fullTimeEmployees = data["fullTimeEmployees"]
 
-    if "longBusinessSummary" in data :
-        data["longBusinessSummary"] = longBusinessSummary_input
+    if "longBusinessSummary" in data:
+        long_business_summary = data["longBusinessSummary"]
+        long_business_summary = long_business_summary.replace(".","\n")
+    
 
     if "city" in data :
-        data["city"] = city_input
+        city = data["city"] 
 
     if "phone" in data :
-        data["phone"] = phone_number
+       phone_company =  data["phone"] 
 
-with open("assignment 6/info_company.json", "w", encoding="utf8") as file:
-    json.dump(data, file, ensure_ascii=False, indent=4)
+with open("assignment 6\\report_of_the_company.txt", "w", encoding="utf8") as file:
+    file.write(" ")
 
-
-
+with open("assignment 6\\report_of_the_company.txt", "a", encoding="utf8") as file:
+    file.write("\nhello and welcome to our company\ntoday I will tell you more about our company.")
+    file.write(f"\nthis is all the sector our company has :{sector}.")
+    file.write(f"\nwe have over {fullTimeEmployees} fullTimeEmployees.")
+    file.write(f"\nthis is our longBusinessSummary \n{long_business_summary}.\n")
+    file.write(f"\nwe are in {city} city.")
+    file.write(f"\nif you wanted to call us this is our number {phone_company}.")
