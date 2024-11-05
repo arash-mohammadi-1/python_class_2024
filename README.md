@@ -1,4 +1,5 @@
 # __hello and welcome to my 2024 python class__
+![mypic](https://media.geeksforgeeks.org/wp-content/uploads/20240123150734/Python-AI--(1).webp)
 
 ## *In this git file I have put all the assignment that I had wrote and all the class codes.*
 
@@ -57,6 +58,4 @@ and **100**
 
 ### and thats it I hope you enjoied it.
 
-## and tree:
-
-![mypic](https://media.istockphoto.com/id/183807813/photo/oak-tree.jpg?s=1024x1024&w=is&k=20&c=QN8pe42K1L3qzWtcYJUMXbx-s-znGjjEIltEX-O4O8c=)
+![mypic](https://hackaday.com/wp-content/uploads/2024/06/Python.jpg?w=800)
