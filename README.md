@@ -56,3 +56,7 @@ and **100**
 15. I need to think more.
 
 ### and thats it I hope you enjoied it.
+
+## and tree:
+
+![mypic](https://media.istockphoto.com/id/183807813/photo/oak-tree.jpg?s=1024x1024&w=is&k=20&c=QN8pe42K1L3qzWtcYJUMXbx-s-znGjjEIltEX-O4O8c=)
